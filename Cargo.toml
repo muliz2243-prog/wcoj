@@ -1,0 +1,19 @@
+[package]
+name = "wcoj"
+version = "0.1.0"
+edition = "2024"
+authors = ["muliz2243-prog"]
+description = "Leapfrog Triejoin over flat tries for K-ary relations and N-variable queries, with a hash join baseline"
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/muliz2243-prog/wcoj"
+homepage = "https://github.com/muliz2243-prog/wcoj"
+documentation = "https://docs.rs/wcoj"
+keywords = ["wcoj", "leapfrog", "join", "database", "graph"]
+categories = ["algorithms", "database-implementations", "data-structures"]
+
+[dependencies]
+
+[[bench]]
+name = "triangle"
+harness = false

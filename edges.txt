@@ -1,0 +1,14 @@
+# End-to-end fixture: two coupled triangles plus loose edges.
+# Triangle 1: 0 -> 1 -> 2 -> 0
+0 1
+1 2
+2 0
+# Triangle 2: 2 -> 3 -> 4 -> 2 (tab separated on purpose)
+	2	3
+3	4
+4 2
+# Loose edges that no cycle can use.
+5 6
+6 7
+# Duplicate of the first edge, must collapse during validation.
+0 1
