@@ -1,6 +1,8 @@
 # wcoj
 
 [![CI](https://github.com/muliz2243-prog/wcoj/actions/workflows/ci.yml/badge.svg)](https://github.com/muliz2243-prog/wcoj/actions/workflows/ci.yml)
+[![crates.io](https://img.shields.io/crates/v/wcoj.svg)](https://crates.io/crates/wcoj)
+[![docs.rs](https://docs.rs/wcoj/badge.svg)](https://docs.rs/wcoj)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 A Worst-Case Optimal Join engine in Rust: Leapfrog Triejoin over flat tries for
@@ -22,6 +24,12 @@ Rust 1.85 or newer (the crate uses edition 2024). No system libraries, no
 build scripts, no dependencies.
 
 ## Install
+
+```
+cargo add wcoj
+```
+
+To hack on the crate itself:
 
 1. `git clone https://github.com/muliz2243-prog/wcoj`
 2. `cd wcoj`
