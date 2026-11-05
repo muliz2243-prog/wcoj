@@ -70,6 +70,9 @@ test and are the only place where `unwrap`/`panic!` are allowed.
 ## Publishable artifacts
 
 - Public repository: https://github.com/muliz2243-prog/wcoj
+- Published crate: https://crates.io/crates/wcoj (0.1.0); docs build on
+  https://docs.rs/wcoj. Publish with `CARGO_REGISTRY_TOKEN` read from
+  `token_crates.txt` (gitignored); GitHub pushes use `token.txt`.
 - `README.md` and `Cargo.toml` metadata (`description`, `readme`, `license`,
   `authors`, `repository`, `homepage`, `documentation`, `keywords`, `categories`).
 - CI in `.github/workflows/ci.yml`: fmt, clippy `-D warnings`, tests, docs and the
