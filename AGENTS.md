@@ -69,8 +69,12 @@ archivo que prueban y son el único lugar donde se permite `unwrap`/`panic!`.
 
 ## Artefactos publicables
 
+- Repositorio público: https://github.com/muliz2243-prog/wcoj
 - `README.md` y metadatos en `Cargo.toml` (`description`, `readme`, `license`,
-  `keywords`, `categories`). Sin `repository` porque no hay remoto configurado.
+  `authors`, `repository`, `homepage`, `documentation`, `keywords`, `categories`).
+- CI en `.github/workflows/ci.yml`: fmt, clippy `-D warnings`, tests, docs y el
+  bench por defecto en cada push y PR.
+- `.gitignore` excluye `target/`, `token.txt` y `datos criticos.../`.
 - `examples/custom_ternary.rs`: consulta K=3 / N=4 desde memoria, sin CLI.
 - `benches/triangle.rs`: harness propio con `Instant` en vez de criterion para
   mantener cero dependencias. Acepta `--nodes`, `--edges`, `--runs`, `--seed`,
